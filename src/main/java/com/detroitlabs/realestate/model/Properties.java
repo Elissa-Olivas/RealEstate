@@ -9,9 +9,11 @@ public class Properties {
     private String address;
     private double sqFt;
     private String image;
+    private int id;
 
 
-    public Properties(int price, int numOfBathrooms, int numOfBedrooms, String city, String state, String address, double sqFt, String image) {
+
+    public Properties(int price, int numOfBathrooms, int numOfBedrooms, String city, String state, String address, double sqFt, String image, int id) {
         this.price = price;
         this.numOfBathrooms = numOfBathrooms;
         this.numOfBedrooms = numOfBedrooms;
@@ -20,6 +22,15 @@ public class Properties {
         this.address = address;
         this.sqFt = sqFt;
         this.image = image;
+        this.id = id;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
     }
 
     public String getCity() {
