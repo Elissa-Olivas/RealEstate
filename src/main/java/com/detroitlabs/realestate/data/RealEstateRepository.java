@@ -14,11 +14,11 @@ import java.util.List;
 public class RealEstateRepository {
 
     private static final List<Properties> ALL_PROPERTIES = Arrays.asList(
-            new Properties(419000, 2, 2, "Denver", "CO", "2685 S Dayton Way", 1938, "https://photos.zillowstatic.com/fp/a88dd6bfddc78b464515a37ca851c228-cc_ft_576.webp", 1),
-            new Properties(425000, 3, 3, "Denver", "CO", "16087 E Elk Place", 1454, "https://photos.zillowstatic.com/fp/815111e6c5de00a7be0418228c81532d-cc_ft_576.webp", 2),
-            new Properties(479300, 3, 3, "Denver", "CO", "20000 E Mitchell Pl #3", 1522, "https://photos.zillowstatic.com/fp/3dfd96a831757f8ebd97213eeec13a5b-cc_ft_576.webp", 3),
-            new Properties(290000, 2, 3, "Denver", "CO", "4160 E Warren Avenue Unit 4,", 1232, "https://photos.zillowstatic.com/fp/4d8846e005c21f28d1b54a309007a393-cc_ft_576.webp", 4),
-            new Properties(839000, 2, 4, "Denver", "CO", "3639 N Humboldt Street", 2017, "https://photos.zillowstatic.com/fp/e0b722fb9920565a9648d8e7d5884da6-cc_ft_1344.webp", 5));
+            new Properties(419000, 2, 2, "Denver", "CO", "2685 S Dayton Way", 1938, 1),
+            new Properties(425000, 3, 3, "Denver", "CO", "16087 E Elk Place", 1454,  2),
+            new Properties(479300, 3, 3, "Denver", "CO", "20000 E Mitchell Pl #3", 1522,  3),
+            new Properties(290000, 2, 3, "Denver", "CO", "4160 E Warren Avenue Unit 4,", 1232,  4),
+            new Properties(839000, 2, 4, "Denver", "CO", "3639 N Humboldt Street", 2017,  5));
 
 
 

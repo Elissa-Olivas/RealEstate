@@ -8,12 +8,11 @@ public class Properties {
     private String state;
     private String address;
     private double sqFt;
-    private String image;
     private int id;
 
 
 
-    public Properties(int price, int numOfBathrooms, int numOfBedrooms, String city, String state, String address, double sqFt, String image, int id) {
+    public Properties(int price, int numOfBathrooms, int numOfBedrooms, String city, String state, String address, double sqFt, int id) {
         this.price = price;
         this.numOfBathrooms = numOfBathrooms;
         this.numOfBedrooms = numOfBedrooms;
@@ -21,7 +20,6 @@ public class Properties {
         this.state = state;
         this.address = address;
         this.sqFt = sqFt;
-        this.image = image;
         this.id = id;
     }
 
@@ -90,11 +88,4 @@ public class Properties {
         this.sqFt = sqFt;
     }
 
-    public String getImage() {
-        return image;
-    }
-
-    public void setImage(String image) {
-        this.image = image;
-    }
 }
