@@ -7,6 +7,7 @@ import com.detroitlabs.realestate.model.RealEstateAgency;
 import org.springframework.stereotype.Component;
 
 import java.lang.reflect.Array;
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
@@ -40,8 +41,8 @@ public class RealEstateRepository {
     }
 
     public List<Properties> searchByUnder(int price) {
-        List<Properties> propertiesUnderPrice = null;
-        for (Properties property : ALL_PROPERTIES) {
+        List<Properties> propertiesUnderPrice = new ArrayList<>();
+        for (Properties property : this.ALL_PROPERTIES) {
             if (property.getPrice() <= price) {
                 propertiesUnderPrice.add(property);
             }

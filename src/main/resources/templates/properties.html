@@ -8,23 +8,18 @@
     <title>PROPERTIES</title>
 </head>
 <body>
-<div class="navbar-fixed">
-    <nav>
-        <div class="container">
-            <a th:href="@{/}" class="brand-logo">GIF Library</a>
-            <a href="#" data-activates="mobile-nav" class="button-collapse right"><i class="material-icons">menu</i></a>
-            <ul class="right hide-on-med-and-down">
-                <li class="active"><a th:href="@{/}">Explore</a></li>
-                <li><a th:href="@{/categories}">Categories</a></li>
-                <li><a th:href="@{/favorites}">Favorites</a></li>
-            </ul>
-            <ul id="mobile-nav" class="side-nav">
-                <li class="active"><a th:href="@{/}">Explore</a></li>
-                <li><a th:href="@{/categories}">Categories</a></li>
-                <li><a th:href="@{/favorites}">Favorites</a></li>
-            </ul>
-        </div>
-    </nav>
+div class="navbar-fixed">
+<nav>
+    <div class="container">
+        <a th:href="@{/}">HOME</a>
+        <!-- <a href="#" data-activates="mobile-nav" class="button-collapse right"><i class="material-icons">menu</i></a> -->
+        <ul>
+            <li class="active"><a th:href="@{/}">Home</a></li>
+            <li><a th:href="@{/properties}">Properties</a></li>
+            <li><a th:href="@{/contact}">Contact</a></li>
+        </ul>
+    </div>
+</nav>
 </div>
 
 <div class="properties container">
@@ -42,19 +37,19 @@
             collection of the model map. Each object in the loop
             should be named 'xxx'
         -->
-        <div  th:each="homesFound: ${property}" class="col s12 l4">
+        <div  th:each="homesFound: ${properties}" class="col s12 l4">
             <!--
                     In the a tag, make the href attribute point to
                     the GIF detail page using the 'name' field of
                     the 'gif' object from the loop above
              -->
-            <a th:href="'/Gif/' + ${gif.id}" th:text="${gif.name}"></a>
+            <a th:href="'/properties/' + ${homesFound.id}" th:text="${homesFound.price}"></a>
             <!--
                 In the img tag, make the src attribute point
                 to the static GIF image, according to the 'name'
                 field of the 'gif' object from the loop above
             -->
-            <img th:src="'/gifs/' + ${gif.name} + '.gif'"/>
+            <img th:src="'/images/' + 'house5.webp'"/>
             <!--
                 In the a tag, make the class attribute have the value
                 of 'mark favorite' or 'unmark favorite' according to
