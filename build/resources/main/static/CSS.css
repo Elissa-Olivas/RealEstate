@@ -18,5 +18,17 @@ nav li a {
     padding: 14px 16px;
 }
 nav li a:hover { /*This changes text when hovering over the nav item */
-    color: black;
+    color: pink;
+}
+body {
+    background: url(https://cdn.pixabay.com/photo/2016/11/18/17/46/house-1836070__480.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+
+}
+img {
+    height: 250px;
+    width: 333px;
+    align: right;
 }

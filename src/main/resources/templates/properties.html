@@ -6,21 +6,22 @@
     <link rel="stylesheet" th:href="@{/CSS.css}" />
 
     <title>PROPERTIES</title>
+
+    <nav>
+        <div class="container">
+            <h1>Willow Real Estate Agency- Properties</h1>
+            <!-- <a href="#" data-activates="mobile-nav" class="button-collapse right"><i class="material-icons">menu</i></a> -->
+            <ul>
+                <li><a th:href="@{/}">Home</a></li>
+                <li class="active"><a th:href="@{/properties}">Properties</a></li>
+                <li><a th:href="@{/contact}">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    </div>
 </head>
 <body>
 
-<nav>
-    <div class="container">
-        <a th:href="@{/}">HOME</a>
-        <!-- <a href="#" data-activates="mobile-nav" class="button-collapse right"><i class="material-icons">menu</i></a> -->
-        <ul>
-            <li><a th:href="@{/}">Home</a></li>
-            <li class="active"><a th:href="@{/properties}">Properties</a></li>
-            <li><a th:href="@{/contact}">Contact</a></li>
-        </ul>
-    </div>
-</nav>
-</div>
 
 <div class="properties container">
     <!--
@@ -43,7 +44,7 @@
                     the GIF detail page using the 'name' field of
                     the 'gif' object from the loop above
              -->
-            <a th:href="'/properties/' + ${homesFound.id}" th:text="${homesFound.price}"></a>
+            <a th:href="'/properties/' + ${homesFound.id}" th:text="'$' + ${homesFound.price} + ': ' + ${homesFound.address}"></a>
             <!--
                 In the img tag, make the src attribute point
                 to the static GIF image, according to the 'name'
@@ -56,7 +57,6 @@
                 the 'favorite' field of the 'gif' object from the
                 loop above
             -->
-            <a href="#" class="mark favorite"></a>
             </a>
         </div>
     </div>
