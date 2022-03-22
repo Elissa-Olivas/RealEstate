@@ -8,6 +8,18 @@
     <title>Contact</title>
 </head>
 <body>
-
+<div class="navbar-fixed">
+    <nav>
+        <div class="container">
+            <a th:href="@{/}">HOME</a>
+            <!-- <a href="#" data-activates="mobile-nav" class="button-collapse right"><i class="material-icons">menu</i></a> -->
+            <ul>
+                <li><a th:href="@{/}">Home</a></li>
+                <li><a th:href="@{/properties}">Properties</a></li>
+                <li class="active"><a th:href="@{/contact}">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+</div>
 </body>
 </html>
