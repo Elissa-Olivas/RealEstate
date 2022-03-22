@@ -14,7 +14,7 @@ nav li:last-child {
 nav li a {
     discplay: inline;
     text-align: center;
-    color: white;
+    color: black;
     padding: 14px 16px;
 }
 nav li a:hover { /*This changes text when hovering over the nav item */
